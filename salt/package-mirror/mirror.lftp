@@ -8,6 +8,10 @@ mirror --continue --delete --loop --parallel=3 --verbose=3 -x "rpm/src/.*" -x ".
 mirror --continue --delete --loop --parallel=3 --verbose=3 repo/$RCE/SLES11-SP4-Pool/sle-11-x86_64/ repo/$RCE/SLES11-SP4-Pool/sle-11-x86_64/
 mirror --continue --delete --loop --parallel=3 --verbose=3 -x "rpm/src/.*" -x ".*\.drpm" repo/$RCE/SLES11-SP4-Updates/sle-11-x86_64/ repo/$RCE/SLES11-SP4-Updates/sle-11-x86_64/
 
+# SLE11 SDK SP4
+mirror --continue --delete --loop --parallel=3 --verbose=3 repo/$RCE/SLE11-SDK-SP4-Pool/sle-11-x86_64/ repo/$RCE/SLE11-SDK-SP4-Pool/sle-11-x86_64/
+mirror --continue --delete --loop --parallel=3 --verbose=3 -x "rpm/src/.*" -x ".*\.drpm" repo/$RCE/SLE11-SDK-SP4-Updates/sle-11-x86_64/ repo/$RCE/SLE11-SDK-SP4-Updates/sle-11-x86_64/
+
 # SLES 11 SP3 Manager Tools
 mirror --continue --delete --loop --parallel=3 --verbose=3 -x "rpm/src/.*" -x ".*\.drpm" repo/$RCE/SLES11-SP3-SUSE-Manager-Tools/sle-11-x86_64/ repo/$RCE/SLES11-SP3-SUSE-Manager-Tools/sle-11-x86_64/
 
